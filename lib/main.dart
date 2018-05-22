@@ -100,6 +100,19 @@ class MyApp extends StatelessWidget {
         ],
       ),
     );
+    // Define the text section, which is fairly long, as a variable.
+    // Put the text in a Container to enable adding 32 pixels of paddin
+    // along each edge. The `softwrap` property indicates wheter
+    // the text should break on soft link breaks, such as periods or commons.
+    Widget textSection = new Container(
+        padding: const EdgeInsets.all(32.0),
+        child: new Text(
+          '''
+Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situated 1,578 meters above sea level, it is one of the larger Alpine Lakes. A gondola ride from Kandersteg, followed by a half-hour walk through pastures and pine forest, leads you to the lake, which warms to 20 degrees Celsius in the summer. Activities enjoyed here include rowing, and riding the summer toboggan run.
+          ''',
+          softWrap: true,
+        ),
+    );
 
     // The button section contains 3 columns that use the same layout
     //   - an icon over a row of text.
