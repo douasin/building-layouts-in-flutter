@@ -129,14 +129,27 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
       // Commons license, but it's arge and slow to fetch. In `Step 0`
       // you included the image in the project and updated the
       // `pubspec file`, so you can now reference it from your code.
-      body: new ListView(
-        children: [
-          new Image.asset(
-            'images/lake.jpg',
-            height: 240.0,
-            fit: Boxfit.cover,
-          ),
-        ],
+
+      // In the final step, you assemble the pieces together. The widgets
+      // are arranged in a ListView, rather than a Column, because the
+      // ListView automatically scrolls when running the app on a small
+      // device.
+      home: new Scaffold(
+        appBar: new AppBar(
+          title: new Text('Top Lakes'),
+        ),
+        body: new ListView(
+          children: [
+            new Image.asset(
+              'images/lake.jpg',
+              height: 240.0,
+              fit: BoxFit.cover,
+            ),
+            titleSection,
+            buttonSection,
+            textSection,
+          ],
+        ),
       ),
     );
   }
