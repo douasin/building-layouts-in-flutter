@@ -124,7 +124,7 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // Tree of the four column elements are now copmlete, leaving only
+      // Three of the four column elements are now copmlete, leaving only
       // the image. This image is availabel online under the Creative
       // Commons license, but it's arge and slow to fetch. In `Step 0`
       // you included the image in the project and updated the
